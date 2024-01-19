@@ -133,7 +133,6 @@ if [[ $latest != $current || $debug ]]; then
         unzip -q pulse-xcframeworks-all-platforms.zip
 
         echo "Preparing xcframeworks for distribution..."
-        cd pulse-xcframeworks-all-platforms
         zip_frameworks
 
         echo "Creating source files..."
@@ -150,9 +149,9 @@ if [[ $latest != $current || $debug ]]; then
     if [ -d PulseUI ]; then rm -rf PulseUI; fi
     if [ -f Package.swift ]; then rm -f Package.swift; fi
 
-    mv $scratch/pulse-xcframeworks-all-platforms/Pulse .
-    mv $scratch/pulse-xcframeworks-all-platforms/PulseUI .
-    mv $scratch/pulse-xcframeworks-all-platforms/Package.swift .
+    mv $scratch/Pulse .
+    mv $scratch/PulseUI .
+    mv $scratch/Package.swift .
 
     # Skips deploy
     if [[ $skip_release ]]; then echo "Done."; exit 0; fi
@@ -162,7 +161,7 @@ if [[ $latest != $current || $debug ]]; then
     commit_changes "release/$latest"
 
     echo "Release $latest"
-    gh release create --title "Release $latest" --target "release/$latest" $latest $scratch/pulse-xcframeworks-all-platforms/*.xcframework.zip
+    gh release create --title "Release $latest" --target "release/$latest" $latest $scratch/*.xcframework.zip
 
     echo "Create PR and merge"
     gh pr create --fill
