@@ -25,13 +25,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Pulse",
-            url: "https://github.com/ilendemli/pulse-spm/releases/download/4.2.6/Pulse.xcframework.zip",
-            checksum: "d231f2b7b06de3f445698656bc2662eca7328625888fdfc25b64050f52aedfa4"
+            url: "https://github.com/ilendemli/pulse-spm/releases/download/4.2.7/Pulse.xcframework.zip",
+            checksum: "35c299a5fbbde639b5ec83236e68c451c18523815f063e274e71897c24b535f2"
         ),
         .binaryTarget(
             name: "PulseUI",
-            url: "https://github.com/ilendemli/pulse-spm/releases/download/4.2.6/PulseUI.xcframework.zip",
-            checksum: "6471dc983020bfd5e6e84e235b1b05b1b52a5d7f45fbd99dab664dfd3dbc3664"
+            url: "https://github.com/ilendemli/pulse-spm/releases/download/4.2.7/PulseUI.xcframework.zip",
+            checksum: "841d9896da5ccb630838e65c43533d48d4eb95c95c239ce70c5a817b5543879f"
         ),
         .target(
             name: "PulseTarget",
