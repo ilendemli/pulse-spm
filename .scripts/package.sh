@@ -104,7 +104,7 @@ source_repo="https://github.com/kean/Pulse"
 target_repo="https://github.com/ilendemli/pulse-spm"
 
 # Release versions
-latest=$(latest_release_number $source_repo)
+latest=5.1.1 #$(latest_release_number $source_repo)
 current=$(latest_release_number $target_repo)
 
 # Args
