@@ -1,8 +1,5 @@
 // swift-tools-version:5.3
 
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License.
-
 import PackageDescription
 
 let package = Package(
@@ -25,13 +22,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Pulse",
-            url: "https://github.com/ilendemli/pulse-spm/releases/download/4.2.7/Pulse.xcframework.zip",
-            checksum: "35c299a5fbbde639b5ec83236e68c451c18523815f063e274e71897c24b535f2"
+            url: "https://github.com/ilendemli/pulse-spm/releases/download/5.1.1/Pulse.xcframework.zip",
+            checksum: "e4e0b391a2fa1a060f20b639f05fcfc120405364f39b4058dbb2043a60027fd4"
         ),
         .binaryTarget(
             name: "PulseUI",
-            url: "https://github.com/ilendemli/pulse-spm/releases/download/4.2.7/PulseUI.xcframework.zip",
-            checksum: "841d9896da5ccb630838e65c43533d48d4eb95c95c239ce70c5a817b5543879f"
+            url: "https://github.com/ilendemli/pulse-spm/releases/download/5.1.1/PulseUI.xcframework.zip",
+            checksum: "9d71079cd12bcadedd5603c54d8eb305515951727e7c4ab8c2933c427c311009"
         ),
         .target(
             name: "PulseTarget",
