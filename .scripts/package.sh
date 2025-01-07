@@ -127,7 +127,7 @@ if [[ $latest != $current || $debug ]]; then
         home=$OLDPWD
 
         echo "Downloading latest release..."
-        gh release download --repo $source_repo --pattern pulse-xcframeworks-all-platforms.zip
+        gh release download $latest --repo $source_repo --pattern pulse-xcframeworks-all-platforms.zip
 
         echo "Unzipping.."
         unzip -q pulse-xcframeworks-all-platforms.zip
