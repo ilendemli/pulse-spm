@@ -1,8 +1,5 @@
 // swift-tools-version:5.3
 
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License.
-
 import PackageDescription
 
 let package = Package(
